@@ -3,9 +3,17 @@ import {Book, CheckCircle, Sparkles, User, UserCheck, WifiOff} from 'lucide-reac
 import hero from '../assets/images/hero.jpg'
 import facileeduc from '../assets/images/facileduc.png'
 import{ motion} from 'framer-motion'
+import { useNavigate } from "react-router-dom";
 
 
 export default function Accueil(){
+
+    const navigate = useNavigate()
+
+    function Login(){
+        navigate('/user-statut')
+    }
+
     return(
         <div className="bg-[#21261F]/90">
             <div className=" px-70">
@@ -18,8 +26,12 @@ export default function Accueil(){
                     </div>
 
                     <div className="flex items-center justify-center gap-3">
-                        <button className="flex items-center bg-gray-600 text-white font-semibold py-1 px-3 rounded-xl text-sm">Connexion</button>
-                        <button className="flex items-center bg-[#65D930] font-semibold py-1 px-3 rounded-xl text-sm">Inscription</button>
+                        <button 
+                            onClick={Login}
+                        className="flex items-center bg-gray-600 text-white font-semibold py-1 px-3 rounded-xl text-sm">Connexion</button>
+                        <button 
+                            onClick={Login}
+                            className="flex items-center bg-[#65D930] font-semibold py-1 px-3 rounded-xl text-sm">Inscription</button>
                     </div>
                 </div>
             
@@ -42,8 +54,12 @@ export default function Accueil(){
                     espace FACIL'EDUC. <br />Construis pour formez, <br />et accroitre un réèl apprentissage dans<br /> le syteme scolaire.
                     </span>
                     <div className="flex items-center justify-center gap-2">
-                        <button className="bg-[#65D930] py-3 px-8 rounded-full hover:border-gray-600 hover:bg-transparent border-2 border-[#65D930] transition-colors duration-200 hover:text-white cursor-pointer font-semibold">Commencer</button>
-                        <button className="text-white py-3 px-8 border-2  hover:bg-[#65D930] hover:text-black transition-colors duration-200 hover:border-[#65D930] border-gray-600 rounded-full cursor-pointer font-semibold">Voir les cours</button>
+                        <button 
+                            onClick={Login}
+                            className="bg-[#65D930] py-3 px-8 rounded-full hover:border-gray-600 hover:bg-transparent border-2 border-[#65D930] transition-colors duration-200 hover:text-white cursor-pointer font-semibold">Commencer</button>
+                        <button 
+                            onClick={Login}
+                            className="text-white py-3 px-8 border-2  hover:bg-[#65D930] hover:text-black transition-colors duration-200 hover:border-[#65D930] border-gray-600 rounded-full cursor-pointer font-semibold">Voir les cours</button>
                     </div>
                     <div className="flex items-center justify-center gap-2">
                         <div className="flex items-center gap-1">
@@ -91,11 +107,11 @@ export default function Accueil(){
                         <span className="font-bold text-white">Toujours Accessible</span>
                         <p className="text-gray-500">Ne laissez pas la connectivité vous arrêter.
 
-Téléchargez vos leçons une fois
+                            Téléchargez vos leçons une fois
 
-et apprenez hors ligne à tout moment,
+                            et apprenez hors ligne à tout moment,
 
-n’importe où, sur n’importe quel appareil.
+                            n’importe où, sur n’importe quel appareil.
 
 
                         </p>
@@ -117,11 +133,11 @@ n’importe où, sur n’importe quel appareil.
                         <span className="font-bold text-white">Une véritable compréhension</span>
                         <p className="text-gray-500">Nous décomposons des sujets complexes
 
-en contenu simplifié conçu
+                            en contenu simplifié conçu
 
-spécialement pour la clarté, la rétention
+                            spécialement pour la clarté, la rétention
 
-et une compréhension approfondie.
+                            et une compréhension approfondie.
 
 
                         </p>
@@ -142,9 +158,9 @@ et une compréhension approfondie.
                         </div>
                         <span className="font-bold text-white">Autonomie totale</span>
                         <p className="text-gray-500">Prenez en main votre apprentissage
-avec des outils à votre rythme qui vous aident
-à suivre vos progrès et à gérer
-votre propre parcours d'apprentissage.
+                            avec des outils à votre rythme qui vous aident
+                            à suivre vos progrès et à gérer
+                            votre propre parcours d'apprentissage.
 
 
                         </p>
@@ -160,6 +176,7 @@ votre propre parcours d'apprentissage.
                 <motion.button
                     whileHover={{scale:1.05}}
                     whileTap={{scale:0.95}}
+                    onClick={Login}
                     className="font-bold flex items-center px-20 py-8 text-xl rounded-full bg-[#39C200] my-5 hover:border-gray-600 hover:bg-transparent border-2 border-[#39C200] transition-colors duration-200 hover:text-white cursor-pointer"
                 ><Sparkles className="h-10 w-10 mr-2 animate-spin" />Commencez gratuitement
                     

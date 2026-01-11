@@ -1,0 +1,325 @@
+📘 CAHIER DES CHARGES COMPLET – Plateforme d’Apprentissage FACIL’ÉDUC
+
+1. Présentation du projet
+1.1. Objectif général
+
+Créer une plateforme d’apprentissage complète destinée aux élèves et étudiants allant du primaire à l’université, intégrant :
+
+des cours et exercices adaptés au niveau,
+
+une IA éducative qui explique sans donner la réponse directement,
+
+une classe virtuelle,
+
+un espace parents,
+
+un forum communautaire,
+
+des quiz chronométrés,
+
+un mode hors connexion,
+
+un module stage/emploi ,
+
+un système de gamification.
+
+1.2. Public cible
+
+Élèves du primaire
+
+Élèves du collège
+
+Élèves du lycée
+
+Étudiants universitaires
+
+Parents
+
+Enseignants / encadreurs
+
+1.3. Plateforme cible
+
+Application mobile (Android / iOS) (optionnel pour plutart)
+
+Application web (responsive)
+
+2. Parcours utilisateur
+2.1. Écran d’accueil
+
+Logo
+
+Message de bienvenue
+
+Bouton “Commencer”
+
+2.2. Choix du niveau (obligatoire)
+
+Liste déroulante ou boutons :
+
+Primaire (cp , CE , CM)
+
+College (6e / 5e ,4e / 3e)
+
+Lycee (2nde / 1ère ,Terminale)
+
+Université
+
+L’application débloque uniquement les modules correspondant au niveau choisi.
+
+3. Fonctionnalités principales
+3.1. Module Apprentissage (pour tous les niveaux)
+Contenu :
+
+Cours (PDF, textes, vidéos(pour plutard), images)
+
+Devoirs
+
+Exercices interactifs
+
+Exercices auto-corrigés
+
+Ressources téléchargeables
+
+Vidéos explicatives
+
+Organisation :
+
+Par matière (Maths, Français, SVT, Physique, Histoire, etc.)
+
+Par chapitre
+
+Indication du niveau de difficulté
+
+Historique des cours lus
+
+3.2. IA Éducative (IA Assistante)
+Fonctionnement :
+
+L’élève envoie une question, un devoir, ou une image (OCR).
+
+L’IA analyse le contenu.
+
+L’IA explique étape par étape, sans donner directement la réponse.
+
+L’IA propose :
+
+des méthodes,
+
+des exemples similaires,
+
+des indices progressifs.
+
+Mode “Compréhension” : vérifier si l’élève suit bien.
+
+Mode “Explication lente” (primaire)
+
+Mode “Guidée” (collège/lycée/université)
+
+Points clés :
+
+Pas de triche → l’IA ne donne jamais la réponse brute(c'est a dire que l'eleve trouve son resultat , il envoi a l'IA , si ce n'est pas la bonne reponse , l'IA lui explique et il recommence).
+
+Historique des échanges.
+
+Suivi des progrès avec l’IA.
+
+3.3. Classes Virtuelles
+Fonctionnalités :
+
+Salles par niveau
+
+Vidéoconférence (intégration API : Zoom, Agora, Jitsi , etc)
+
+Chat en groupe
+
+Tableau blanc collaboratif
+
+Partage de documents
+
+Notifications avant chaque classe
+
+Possibilité d’enregistrer les cours(optionnel , mais neccessaire pour ceux qui n'ont pas toujours une bonne connexion)
+
+Objectif :
+
+Permet à plusieurs élèves du même niveau de suivre des cours ensemble.
+
+3.4. Forum Communautaire
+Fonctionnalités :
+
+Questions/réponses entre élèves
+
+Classement des meilleures réponses
+
+Catégorisation par matière et niveau
+
+Modération automatique (IA)
+
+Modérateurs humains
+
+Système de votes (“Utile / Pas utile”)
+
+Objectif :
+
+Favoriser l’entraide éducative et la discussion.
+
+3.5. Espace Parents
+Fonctionnalités :
+
+Compte parent lié au compte enfant
+
+Suivi des performances :
+
+temps d’étude,
+
+notes des quiz,
+
+progression dans chaque matière.
+
+Statistiques :
+
+forces et faiblesses,
+
+matières non travaillées.
+
+Historique des devoirs faits / non faits
+
+Notifications :
+
+“Votre enfant n’a pas étudié aujourd’hui”
+
+“Nouveau devoir disponible”
+
+“Baisse de performance en…”
+
+Objectif :
+
+Encourager un suivi parental régulier.
+
+3.6. Quiz chronométrés & Mode Révision Express
+Fonctionnalités :
+
+Quiz courts : 10–20 questions
+
+Mode chronométré (30 s / question)
+
+Score instantané
+
+Statistiques détaillées :
+
+bonnes réponses,
+
+erreurs,
+
+temps moyen.
+
+Suggestions d’exercices liées aux erreurs.
+
+Mode Révision Express :
+
+5 min
+
+10 min
+
+15 min
+
+Objectif :
+
+Révisions rapides pour examens et devoirs.
+
+3.7. Gamification
+Fonctionnalités :
+
+Badges (par matière, par progression)
+
+Points XP
+
+Niveaux d’expérience
+
+Défis quotidiens et hebdomadaires
+
+Classement :
+
+par classe,
+
+par niveau,
+
+mensuel/hebdomadaire.
+
+Objectif :
+
+Favoriser la régularité et l’engagement.
+
+3.8. Mode Hors Connexion
+Fonctionnalités :
+
+Téléchargement des cours (PDF, images, vidéos compressées)
+
+Exercices offline
+
+Caching intelligent(je ne comprends pas trop ca , mais je vais rechercher plus sur ca , mais je l'ai ajouter cas meme)
+
+Synchronisation automatique des données lorsque l’app retrouve Internet
+
+Objectif :
+
+Accessibilité totale même dans les zones mal couvertes.
+
+3.9. Module Stage & Emploi (Université)
+Fonctionnalités :
+
+Offres de stage et emploi filtrées par filière (ou general , ce que je prefere d'ailleurs)
+
+Conseils CV et lettre de motivation
+
+Modèles téléchargeables (PDF)
+
+Notifications d’offres nouvelles
+
+3.10. Module Informations (Université & Lycée)
+Contenu :
+
+Actualités académiques
+
+Informations sur les concours
+
+Dates d’examens
+
+Orientation scolaire
+
+4. Fonctionnalités transversales
+4.1. Authentification
+
+Inscription (email, mot de passe, numéro téléphone(pas trop obligatoire))
+
+Auth via Google / Facebook
+
+Mot de passe oublié
+
+Sécurité JWT
+
+4.2.Un espace dediee pour recueillir les avis utilisateurs.
+
+4.3. Profil utilisateur
+
+Informations personnelles
+
+Photo(pas obligatoire)
+
+Niveau choisi
+
+Historique de progression
+
+Réglages : notifications, préférences, thèmes
+
+4.3. Footer commun
+
+Liens : Facebook, WhatsApp, Instagram , tiktok
+
+Mentions légales
+
+Contact support
+
+FIN.
+
+BON A PARTIR D'ICI J'AI UN PEU CE QUE J'AI EN TETE , JE NE SAIS PAS SI J'AI OUBLIE QUELQUE CHOSE.
